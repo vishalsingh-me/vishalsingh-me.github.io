@@ -1,0 +1,33 @@
+export const metadata = {
+  title: 'From front-end craft to AI engineering',
+  description: 'Why strong UX skills help when building AI features that people can trust.',
+  date: '2024-05-22',
+  readTime: '5 min',
+  tags: ['front-end', 'ai', 'career'],
+};
+
+# From front-end craft to AI engineering
+
+I have spent years making interfaces feel calm and clear. That mindset is useful while I learn AI engineering because many AI features fail due to messy UX, not just weak models.
+
+## The bridge
+
+- Good prompts and data still need predictable UI flows
+- Validation, fallbacks, and guardrails mirror front-end patterns
+- Clear feedback reduces user anxiety when AI is uncertain
+
+Here is a simple loop I use when planning an AI powered feature:
+
+```text
+[User goal] -> [Input check] -> [AI call] -> [Fallback if low confidence]
+                       |                  -> [Explain output]
+                       -> [Log for tuning]
+```
+
+## Practical steps I follow
+
+- Start with a manual version in the UI before wiring models, so we know the desired shape of the answer.
+- Keep prompts and model settings visible in the codebase; small changes can ripple across the UX.
+- Add empty state copy that respects the user's time instead of hiding behind spinners.
+
+The front-end lessons carry over: design for clarity, measure latency, and give people confidence that the system is acting responsibly.

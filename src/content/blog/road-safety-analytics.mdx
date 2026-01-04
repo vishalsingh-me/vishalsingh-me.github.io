@@ -1,0 +1,35 @@
+export const metadata = {
+  title: 'How computer vision can nudge safer roads in India',
+  description: 'Notes from a low cost prototype for spotting overspeeding and missing seat belts.',
+  date: '2024-06-10',
+  readTime: '6 min',
+  tags: ['computer vision', 'safety', 'prototyping'],
+};
+
+# How computer vision can nudge safer roads in India
+
+My father once faced a serious accident because another driver sped past a turn. That moment pushed me to explore simple ways we can use computer vision to flag risky driving on busy Indian roads.
+
+## What I prototyped
+
+- Used YOLOv8 for vehicle and seat belt detection
+- Estimated speed based on frame differentials and a known camera distance
+- Streamlit dashboard for quick triage and CSV export
+
+```mermaid
+flowchart LR
+  Camera -->|frames| Detector[YOLOv8]
+  Detector -->|boxes + belt flag| PostProcess[Speed + confidence]
+  PostProcess --> Alerts[Alerts dashboard]
+  Alerts --> Reports[Incident CSV]
+```
+
+## Field notes
+
+- **Lighting is messy.** Shadows and headlight glare trick detectors. I added basic histogram checks and kept thresholds conservative.
+- **Speed calculation needs calibration.** Frame based estimation is only as good as the camera placement. I built a small helper to enter road width and camera height.
+- **Edge hardware matters.** A Raspberry Pi 4 could handle low traffic but struggled on busy junctions. A modest GPU box kept latency under 120ms.
+
+## Why this matters
+
+This is not a silver bullet. It is a nudge to highlight problem spots, give local authorities data they can trust, and remind drivers that safety matters. The same pattern can extend to helmet detection or lane violations with careful tuning.
