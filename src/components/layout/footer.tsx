@@ -8,7 +8,7 @@ export function Footer() {
         <div>
           <p className="text-sm font-semibold">Vishal Singh</p>
           <p className="text-sm text-muted-foreground">
-            Front-end developer growing into AI engineering.
+            Full Stack developer growing into AI engineering.
           </p>
         </div>
         <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">

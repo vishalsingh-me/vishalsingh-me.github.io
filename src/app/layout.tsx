@@ -19,14 +19,14 @@ const baseUrl = 'https://vishal-singh.dev';
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Vishal Singh | Front-end Developer into AI',
+    default: 'Vishal Singh | Full Stack Developer into AI',
     template: '%s | Vishal Singh',
   },
   description:
     'Portfolio of Vishal Singh, front-end developer transitioning into AI engineering. React, Next.js, TypeScript, and human centered problem solving.',
   keywords: [
     'Vishal Singh',
-    'Front-end Developer',
+    'Full Stack Developer',
     'Next.js',
     'TypeScript',
     'AI Engineering',
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: baseUrl,
-    title: 'Vishal Singh | Front-end Developer into AI',
+    title: 'Vishal Singh | Full Stack Developer into AI',
     description:
-      'Human centered front-end developer from the United States working on AI, computer vision, and practical tech for road safety and healthcare.',
+      'Human centered full stack developer from the United States working on AI, computer vision, and practical tech for road safety and healthcare.',
     siteName: 'Vishal Singh Portfolio',
     images: [
       {
@@ -70,7 +70,7 @@ function jsonLd() {
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Vishal Singh',
-    jobTitle: 'Front-end Developer',
+    jobTitle: 'Full Stack Developer',
     url: baseUrl,
     sameAs: ['https://github.com/', 'https://www.linkedin.com/'],
     description:

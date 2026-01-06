@@ -42,9 +42,7 @@ export function Header() {
             <Link href="/" className="text-base font-semibold">
               Vishal Singh
             </Link>
-            <p className="text-xs text-muted-foreground">
-              Front-end to AI curiosity
-            </p>
+            <p className="text-xs text-muted-foreground">Full Stack to AI curiosity</p>
           </div>
         </div>
         <nav className="hidden items-center gap-1 rounded-full bg-muted/50 px-2 py-1 text-sm font-medium md:flex">

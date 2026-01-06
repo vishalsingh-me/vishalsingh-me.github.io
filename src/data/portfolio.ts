@@ -98,7 +98,7 @@ export const portfolio: PortfolioContent = {
   location: 'Boston, Massachusetts, United States',
   openTo: ['Artificial Intelligence Intern', 'Machine Learning Intern', 'Software Engineer Intern'],
   hero: {
-    headline: 'Front-end engineer growing into AI.',
+    headline: 'Full Stack engineer growing into AI.',
     subtext:
       'I build reliable web experiences with React, Next.js, and TypeScript. I am exploring ML and computer vision through practical projects.',
     ctas: [
@@ -116,7 +116,7 @@ export const portfolio: PortfolioContent = {
   },
   skills: [
     {
-      category: 'Front-end',
+      category: 'Full Stack',
       items: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'shadcn/ui', 'Framer Motion', 'Zod', 'JSON'],
     },
     {
@@ -149,7 +149,7 @@ export const portfolio: PortfolioContent = {
       company: 'Newgen Software',
       period: 'Apr 2023 - Sep 2023',
       location: 'Noida, Uttar Pradesh, India',
-      description: 'Contributed to product teams shipping web experiences for enterprise users.',
+      description: 'Contributed to product teams shipping web applications for enterprise users.',
       highlights: [
         'Handled feature delivery and maintenance for web modules.',
         'Kept UI states simple to reduce support load.',

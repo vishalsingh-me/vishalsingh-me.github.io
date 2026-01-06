@@ -44,7 +44,7 @@ export default function ProjectsPage() {
           prototypes that match your needs.
         </p>
         <div className="mt-3 flex gap-2">
-          <Badge variant="primary">Front-end</Badge>
+          <Badge variant="primary">Full Stack</Badge>
           <Badge variant="primary">AI ideas</Badge>
           <Badge variant="primary">Performance</Badge>
         </div>
